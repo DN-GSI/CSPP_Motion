@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4018.26">
+	<Project ProjectGUID="{407563EA-4878-4755-909F-FC2CDE0FBD62}" Target64Bit="true">
+		<System>
+			<Settings MaxCpus="4" NonWinCpus="1"/>
+			<Licenses>
+				<Target>
+					<ManualSelect>{BDCC0070-42D5-49AE-ABF1-1D4434813D60}</ManualSelect>
+				</Target>
+			</Licenses>
+			<Tasks>
+				<Task Id="2" CreateSymbols="true" Priority="1" CycleTime="100000" AmsPort="301">
+					<Name>Probus</Name>
+					<Vars VarGrpType="1" InsertType="1">
+						<Name>Inputs</Name>
+						<Var>
+							<Name>In_Byte0</Name>
+							<Type>BYTE</Type>
+						</Var>
+						<Var>
+							<Name>In_Byte1</Name>
+							<Type>BYTE</Type>
+							<BitOffs>8</BitOffs>
+							<ExternalAddress>1</ExternalAddress>
+						</Var>
+						<Var>
+							<Name>In_Byte2</Name>
+							<Type>BYTE</Type>
+							<BitOffs>16</BitOffs>
+							<ExternalAddress>2</ExternalAddress>
+						</Var>
+						<Var>
+							<Name>In_Byte3</Name>
+							<Type>BYTE</Type>
+							<BitOffs>24</BitOffs>
+							<ExternalAddress>3</ExternalAddress>
+						</Var>
+						<Var>
+							<Name>In_Byte4</Name>
+							<Type>BYTE</Type>
+							<BitOffs>32</BitOffs>
+							<ExternalAddress>4</ExternalAddress>
+						</Var>
+						<Var>
+							<Name>In_Byte5</Name>
+							<Type>BYTE</Type>
+							<BitOffs>40</BitOffs>
+							<ExternalAddress>5</ExternalAddress>
+						</Var>
+						<Var>
+							<Name>In_Word0</Name>
+							<Comment>
+								<![CDATA[In_Word6+7]]>
+							</Comment>
+							<Type>UINT</Type>
+							<BitOffs>48</BitOffs>
+							<ExternalAddress>6</ExternalAddress>
+						</Var>
+						<Var>
+							<Name>Axis1_Status</Name>
+							<Type>UINT</Type>
+							<BitOffs>64</BitOffs>
+							<ExternalAddress>8</ExternalAddress>
+						</Var>
+						<Var>
+							<Name>Axis1_Position</Name>
+							<Type>UDINT</Type>
+							<BitOffs>80</BitOffs>
+							<ExternalAddress>10</ExternalAddress>
+						</Var>
+						<Var>
+							<Name>Axis2_Status</Name>
+							<Type>UINT</Type>
+							<BitOffs>112</BitOffs>
+							<ExternalAddress>14</ExternalAddress>
+						</Var>
+						<Var>
+							<Name>Axis2_Position</Name>
+							<Type>UDINT</Type>
+							<BitOffs>128</BitOffs>
+							<ExternalAddress>16</ExternalAddress>
+						</Var>
+						<Var>
+							<Name>Axis3_Status</Name>
+							<Type>UINT</Type>
+							<BitOffs>160</BitOffs>
+							<ExternalAddress>20</ExternalAddress>
+						</Var>
+						<Var>
+							<Name>Axis3_Position</Name>
+							<Type>UDINT</Type>
+							<BitOffs>176</BitOffs>
+							<ExternalAddress>22</ExternalAddress>
+						</Var>
+						<Var>
+							<Name>Axis4_Status</Name>
+							<Type>UINT</Type>
+							<BitOffs>208</BitOffs>
+							<ExternalAddress>26</ExternalAddress>
+						</Var>
+						<Var>
+							<Name>Axis4_Position</Name>
+							<Type>UDINT</Type>
+							<BitOffs>224</BitOffs>
+							<ExternalAddress>28</ExternalAddress>
+						</Var>
+						<Var>
+							<Name>Axis5_Status</Name>
+							<Type>UINT</Type>
+							<BitOffs>256</BitOffs>
+							<ExternalAddress>32</ExternalAddress>
+						</Var>
+						<Var>
+							<Name>Axis5_Position</Name>
+							<Type>UDINT</Type>
+							<BitOffs>272</BitOffs>
+							<ExternalAddress>34</ExternalAddress>
+						</Var>
+						<Var>
+							<Name>Axis6_Status</Name>
+							<Type>UINT</Type>
+							<BitOffs>304</BitOffs>
+							<ExternalAddress>38</ExternalAddress>
+						</Var>
+						<Var>
+							<Name>Axis6_Position</Name>
+							<Type>UDINT</Type>
+							<BitOffs>320</BitOffs>
+							<ExternalAddress>40</ExternalAddress>
+						</Var>
+						<Var>
+							<Name>Axis7_Status</Name>
+							<Type>UINT</Type>
+							<BitOffs>352</BitOffs>
+							<ExternalAddress>44</ExternalAddress>
+						</Var>
+						<Var>
+							<Name>Axis7_Position</Name>
+							<Type>UDINT</Type>
+							<BitOffs>368</BitOffs>
+							<ExternalAddress>46</ExternalAddress>
+						</Var>
+						<Var>
+							<Name>Axis8_Status</Name>
+							<Type>UINT</Type>
+							<BitOffs>400</BitOffs>
+							<ExternalAddress>50</ExternalAddress>
+						</Var>
+						<Var>
+							<Name>Axis8_Position</Name>
+							<Type>UDINT</Type>
+							<BitOffs>416</BitOffs>
+							<ExternalAddress>52</ExternalAddress>
+						</Var>
+						<Var>
+							<Name>Axis9_Status</Name>
+							<Type>UINT</Type>
+							<BitOffs>448</BitOffs>
+							<ExternalAddress>56</ExternalAddress>
+						</Var>
+						<Var>
+							<Name>Axis9_Position</Name>
+							<Type>UDINT</Type>
+							<BitOffs>464</BitOffs>
+							<ExternalAddress>58</ExternalAddress>
+						</Var>
+						<Var>
+							<Name>Axis10_Status</Name>
+							<Type>UINT</Type>
+							<BitOffs>496</BitOffs>
+							<ExternalAddress>62</ExternalAddress>
+						</Var>
+						<Var>
+							<Name>Axis10_Position</Name>
+							<Type>UDINT</Type>
+							<BitOffs>512</BitOffs>
+							<ExternalAddress>64</ExternalAddress>
+						</Var>
+						<Var>
+							<Name>Axis11_Status</Name>
+							<Type>UINT</Type>
+							<BitOffs>544</BitOffs>
+							<ExternalAddress>68</ExternalAddress>
+						</Var>
+						<Var>
+							<Name>Axis11_Position</Name>
+							<Type>UDINT</Type>
+							<BitOffs>560</BitOffs>
+							<ExternalAddress>70</ExternalAddress>
+						</Var>
+						<Var>
+							<Name>Axis12_Status</Name>
+							<Type>UINT</Type>
+							<BitOffs>592</BitOffs>
+							<ExternalAddress>74</ExternalAddress>
+						</Var>
+						<Var>
+							<Name>Axis12_Position</Name>
+							<Type>UDINT</Type>
+							<BitOffs>608</BitOffs>
+							<ExternalAddress>76</ExternalAddress>
+						</Var>
+						<Var>
+							<Name>Axis13_Status</Name>
+							<Type>UINT</Type>
+							<BitOffs>640</BitOffs>
+							<ExternalAddress>80</ExternalAddress>
+						</Var>
+						<Var>
+							<Name>Axis13_Position</Name>
+							<Type>UDINT</Type>
+							<BitOffs>656</BitOffs>
+							<ExternalAddress>82</ExternalAddress>
+						</Var>
+					</Vars>
+					<Vars VarGrpType="2" InsertType="1">
+						<Name>Outputs</Name>
+						<Var>
+							<Name>Out_Word0</Name>
+							<Comment>
+								<![CDATA[Out_Byte0-3]]>
+							</Comment>
+							<Type>UDINT</Type>
+						</Var>
+						<Var>
+							<Name>Out_Word1</Name>
+							<Comment>
+								<![CDATA[Out_Byte4-7]]>
+							</Comment>
+							<Type>UDINT</Type>
+							<BitOffs>32</BitOffs>
+							<ExternalAddress>4</ExternalAddress>
+						</Var>
+					</Vars>
+					<Image Id="2" AddrType="1" ImageType="1" SizeIn="86" SizeOut="8">
+						<Name>Image</Name>
+					</Image>
+				</Task>
+			</Tasks>
+		</System>
+		<Io>
+			<Device DevType="38" AmsPort="28673" AmsNetId="140.181.81.162.2.1" RemoteName="Device 1 (FC31xx)" Id="1">
+				<Name>Device 1 (FC31xx)</Name>
+				<AddressInfo>
+					<Pci>
+						<Address>-138412032</Address>
+						<Size>0</Size>
+						<BusNo>3</BusNo>
+						<SlotNo>2</SlotNo>
+						<VendorId>5612</VendorId>
+						<DeviceId>12545</DeviceId>
+						<BaseAddr>2</BaseAddr>
+						<IrqNo>10</IrqNo>
+					</Pci>
+				</AddressInfo>
+				<Image Id="1" AddrType="2" ImageType="3">
+					<Name>Image</Name>
+				</Image>
+				<Box BoxType="1003" Id="1">
+					<Name>Box 1 (GSD Box) (PA-Control)</Name>
+					<Comment>
+						<![CDATA[Vendor:   IEF-Werner GmbH
+Revision: V1.0
+]]>
+					</Comment>
+					<ImageId>25</ImageId>
+					<Vars VarGrpType="1">
+						<Name>Inputs</Name>
+						<Var BoxStateVariable="true">
+							<Name>DpState</Name>
+							<Comment>
+								<![CDATA[0 = No error
+1 = Station deactivated
+2 = Station not exists
+3 = Master lock
+4 = Invalid slave response
+5 = Parameter fault
+6 = Not supported
+7 = Config fault
+8 = Station not ready
+9 = Static diagnosis
+10 = Diagnosis overflow
+11 = Physical fault
+12 = Data-Exchange left
+13 = Severe bus fault
+14 = Telegram fault
+15 = Station has no ressources
+16 = Service not activated
+17 = Unexpected telegram
+18 = Station ready
+31 = only for EtherCAT gateways: WC-State of cyclic EtherCAT frame is 1
+128 = slave, waiting for data transfer (or DP-Master in CLEAR-Mode)
+129	= slave, waiting for configuration
+130	= slave, waiting for parameter
+131	= slave, waiting for baudrate
+132	= slave, waiting for station no. from PLC
+]]>
+							</Comment>
+							<Type>USINT</Type>
+							<BitOffs>28720</BitOffs>
+						</Var>
+						<Var BoxStateVariable="true">
+							<Name>ExtDiagFlag</Name>
+							<Comment>
+								<![CDATA[0 = Diagnosis Data unchanged
+1 = Diagnosis Data changed, use ADS-Read to get the data]]>
+							</Comment>
+							<Type>BIT</Type>
+							<BitOffs>32134</BitOffs>
+						</Var>
+					</Vars>
+					<Profibus Model="PA-Control" StationNo="6" MinSlaveInterval="1" Ident="1634" Modular="1" MaxModule="18" MaxInputLen="104" MaxOutputLen="104" MaxDataLen="208" WatchDogTime="200" SupportFlags="991" IoAccessDiv="1" WatchDog="true" SlaveParaSet="8000060004000001" C2Settings="e803000000000000000000000000" CfgData="97a795a595a595a595a595a595a595a595a595a595a595a595a595a5" FixPresetModules="true">
+						<GsdModuleDesc Name="PAC-Daten ohne Konsistenz" CfgData="1727"/>
+						<GsdModuleDesc Name="PAC-Daten mit Konsistenz" CfgData="97a7"/>
+						<GsdModuleDesc Name="Achse-1 Flags und Daten" CfgData="95a5"/>
+						<GsdModuleDesc Name="Achse-2 Flags und Daten" CfgData="95a5"/>
+						<GsdModuleDesc Name="Achse-3 Flags und Daten" CfgData="95a5"/>
+						<GsdModuleDesc Name="Achse-4 Flags und Daten" CfgData="95a5"/>
+						<GsdModuleDesc Name="Achse-5 Flags und Daten" CfgData="95a5"/>
+						<GsdModuleDesc Name="Achse-6 Flags und Daten" CfgData="95a5"/>
+						<GsdModuleDesc Name="Achse-7 Flags und Daten" CfgData="95a5"/>
+						<GsdModuleDesc Name="Achse-8 Flags und Daten" CfgData="95a5"/>
+						<GsdModuleDesc Name="Achse-9 Flags und Daten" CfgData="95a5"/>
+						<GsdModuleDesc Name="Achse-10 Flags und Daten" CfgData="95a5"/>
+						<GsdModuleDesc Name="Achse-11 Flags und Daten" CfgData="95a5"/>
+						<GsdModuleDesc Name="Achse-12 Flags und Daten" CfgData="95a5"/>
+						<GsdModuleDesc Name="Achse-13 Flags und Daten" CfgData="95a5"/>
+						<GsdModuleDesc Name="Achse-14 Flags und Daten" CfgData="95a5"/>
+						<GsdModuleDesc Name="Achse-15 Flags und Daten" CfgData="95a5"/>
+						<GsdModuleDesc Name="Achse-16 Flags und Daten" CfgData="95a5"/>
+						<GsdModule Id="2" In="8" Out="8" ModIdx="1" CfgData="97a7">
+							<Name>Module 2 (PAC-Daten mit Konsistenz)</Name>
+							<ImageId>24</ImageId>
+							<Vars VarGrpType="1">
+								<Name>Inputs</Name>
+								<Var>
+									<Name>PAC-Daten mit Konsistenz_0_0</Name>
+									<Type GUID="{18071995-0000-0000-0000-001300000008}">ARRAY [0..7] OF BYTE</Type>
+									<BitOffs>32</BitOffs>
+								</Var>
+							</Vars>
+							<Vars VarGrpType="2">
+								<Name>Outputs</Name>
+								<Var>
+									<Name>PAC-Daten mit Konsistenz_1_0</Name>
+									<Type GUID="{18071995-0000-0000-0000-001300000008}">ARRAY [0..7] OF BYTE</Type>
+									<BitOffs>32</BitOffs>
+								</Var>
+							</Vars>
+						</GsdModule>
+						<GsdModule Id="3" In="6" Out="6" ModIdx="2" CfgData="95a5">
+							<Name>Module 3 (Achse-1 Flags und Daten)</Name>
+							<ImageId>24</ImageId>
+							<Vars VarGrpType="1">
+								<Name>Inputs</Name>
+								<Var>
+									<Name>Achse-1 Flags und Daten_0_0</Name>
+									<Type GUID="{18071995-0000-0000-0000-001300000006}">ARRAY [0..5] OF BYTE</Type>
+									<BitOffs>96</BitOffs>
+								</Var>
+							</Vars>
+							<Vars VarGrpType="2">
+								<Name>Outputs</Name>
+								<Var>
+									<Name>Achse-1 Flags und Daten_1_0</Name>
+									<Type GUID="{18071995-0000-0000-0000-001300000006}">ARRAY [0..5] OF BYTE</Type>
+									<BitOffs>96</BitOffs>
+								</Var>
+							</Vars>
+						</GsdModule>
+						<GsdModule Id="4" In="6" Out="6" ModIdx="3" CfgData="95a5">
+							<Name>Module 4 (Achse-2 Flags und Daten)</Name>
+							<ImageId>24</ImageId>
+							<Vars VarGrpType="1">
+								<Name>Inputs</Name>
+								<Var>
+									<Name>Achse-2 Flags und Daten_0_0</Name>
+									<Type GUID="{18071995-0000-0000-0000-001300000006}">ARRAY [0..5] OF BYTE</Type>
+									<BitOffs>144</BitOffs>
+								</Var>
+							</Vars>
+							<Vars VarGrpType="2">
+								<Name>Outputs</Name>
+								<Var>
+									<Name>Achse-2 Flags und Daten_1_0</Name>
+									<Type GUID="{18071995-0000-0000-0000-001300000006}">ARRAY [0..5] OF BYTE</Type>
+									<BitOffs>144</BitOffs>
+								</Var>
+							</Vars>
+						</GsdModule>
+						<GsdModule Id="5" In="6" Out="6" ModIdx="4" CfgData="95a5">
+							<Name>Module 5 (Achse-3 Flags und Daten)</Name>
+							<ImageId>24</ImageId>
+							<Vars VarGrpType="1">
+								<Name>Inputs</Name>
+								<Var>
+									<Name>Achse-3 Flags und Daten_0_0</Name>
+									<Type GUID="{18071995-0000-0000-0000-001300000006}">ARRAY [0..5] OF BYTE</Type>
+									<BitOffs>192</BitOffs>
+								</Var>
+							</Vars>
+							<Vars VarGrpType="2">
+								<Name>Outputs</Name>
+								<Var>
+									<Name>Achse-3 Flags und Daten_1_0</Name>
+									<Type GUID="{18071995-0000-0000-0000-001300000006}">ARRAY [0..5] OF BYTE</Type>
+									<BitOffs>192</BitOffs>
+								</Var>
+							</Vars>
+						</GsdModule>
+						<GsdModule Id="6" In="6" Out="6" ModIdx="5" CfgData="95a5">
+							<Name>Module 6 (Achse-4 Flags und Daten)</Name>
+							<ImageId>24</ImageId>
+							<Vars VarGrpType="1">
+								<Name>Inputs</Name>
+								<Var>
+									<Name>Achse-4 Flags und Daten_0_0</Name>
+									<Type GUID="{18071995-0000-0000-0000-001300000006}">ARRAY [0..5] OF BYTE</Type>
+									<BitOffs>240</BitOffs>
+								</Var>
+							</Vars>
+							<Vars VarGrpType="2">
+								<Name>Outputs</Name>
+								<Var>
+									<Name>Achse-4 Flags und Daten_1_0</Name>
+									<Type GUID="{18071995-0000-0000-0000-001300000006}">ARRAY [0..5] OF BYTE</Type>
+									<BitOffs>240</BitOffs>
+								</Var>
+							</Vars>
+						</GsdModule>
+						<GsdModule Id="7" In="6" Out="6" ModIdx="6" CfgData="95a5">
+							<Name>Module 7 (Achse-5 Flags und Daten)</Name>
+							<ImageId>24</ImageId>
+							<Vars VarGrpType="1">
+								<Name>Inputs</Name>
+								<Var>
+									<Name>Achse-5 Flags und Daten_0_0</Name>
+									<Type GUID="{18071995-0000-0000-0000-001300000006}">ARRAY [0..5] OF BYTE</Type>
+									<BitOffs>288</BitOffs>
+								</Var>
+							</Vars>
+							<Vars VarGrpType="2">
+								<Name>Outputs</Name>
+								<Var>
+									<Name>Achse-5 Flags und Daten_1_0</Name>
+									<Type GUID="{18071995-0000-0000-0000-001300000006}">ARRAY [0..5] OF BYTE</Type>
+									<BitOffs>288</BitOffs>
+								</Var>
+							</Vars>
+						</GsdModule>
+						<GsdModule Id="8" In="6" Out="6" ModIdx="7" CfgData="95a5">
+							<Name>Module 8 (Achse-6 Flags und Daten)</Name>
+							<ImageId>24</ImageId>
+							<Vars VarGrpType="1">
+								<Name>Inputs</Name>
+								<Var>
+									<Name>Achse-6 Flags und Daten_0_0</Name>
+									<Type GUID="{18071995-0000-0000-0000-001300000006}">ARRAY [0..5] OF BYTE</Type>
+									<BitOffs>336</BitOffs>
+								</Var>
+							</Vars>
+							<Vars VarGrpType="2">
+								<Name>Outputs</Name>
+								<Var>
+									<Name>Achse-6 Flags und Daten_1_0</Name>
+									<Type GUID="{18071995-0000-0000-0000-001300000006}">ARRAY [0..5] OF BYTE</Type>
+									<BitOffs>336</BitOffs>
+								</Var>
+							</Vars>
+						</GsdModule>
+						<GsdModule Id="9" In="6" Out="6" ModIdx="8" CfgData="95a5">
+							<Name>Module 9 (Achse-7 Flags und Daten)</Name>
+							<ImageId>24</ImageId>
+							<Vars VarGrpType="1">
+								<Name>Inputs</Name>
+								<Var>
+									<Name>Achse-7 Flags und Daten_0_0</Name>
+									<Type GUID="{18071995-0000-0000-0000-001300000006}">ARRAY [0..5] OF BYTE</Type>
+									<BitOffs>384</BitOffs>
+								</Var>
+							</Vars>
+							<Vars VarGrpType="2">
+								<Name>Outputs</Name>
+								<Var>
+									<Name>Achse-7 Flags und Daten_1_0</Name>
+									<Type GUID="{18071995-0000-0000-0000-001300000006}">ARRAY [0..5] OF BYTE</Type>
+									<BitOffs>384</BitOffs>
+								</Var>
+							</Vars>
+						</GsdModule>
+						<GsdModule Id="10" In="6" Out="6" ModIdx="9" CfgData="95a5">
+							<Name>Module 10 (Achse-8 Flags und Daten)</Name>
+							<ImageId>24</ImageId>
+							<Vars VarGrpType="1">
+								<Name>Inputs</Name>
+								<Var>
+									<Name>Achse-8 Flags und Daten_0_0</Name>
+									<Type GUID="{18071995-0000-0000-0000-001300000006}">ARRAY [0..5] OF BYTE</Type>
+									<BitOffs>432</BitOffs>
+								</Var>
+							</Vars>
+							<Vars VarGrpType="2">
+								<Name>Outputs</Name>
+								<Var>
+									<Name>Achse-8 Flags und Daten_1_0</Name>
+									<Type GUID="{18071995-0000-0000-0000-001300000006}">ARRAY [0..5] OF BYTE</Type>
+									<BitOffs>432</BitOffs>
+								</Var>
+							</Vars>
+						</GsdModule>
+						<GsdModule Id="11" In="6" Out="6" ModIdx="10" CfgData="95a5">
+							<Name>Module 11 (Achse-9 Flags und Daten)</Name>
+							<ImageId>24</ImageId>
+							<Vars VarGrpType="1">
+								<Name>Inputs</Name>
+								<Var>
+									<Name>Achse-9 Flags und Daten_0_0</Name>
+									<Type GUID="{18071995-0000-0000-0000-001300000006}">ARRAY [0..5] OF BYTE</Type>
+									<BitOffs>480</BitOffs>
+								</Var>
+							</Vars>
+							<Vars VarGrpType="2">
+								<Name>Outputs</Name>
+								<Var>
+									<Name>Achse-9 Flags und Daten_1_0</Name>
+									<Type GUID="{18071995-0000-0000-0000-001300000006}">ARRAY [0..5] OF BYTE</Type>
+									<BitOffs>480</BitOffs>
+								</Var>
+							</Vars>
+						</GsdModule>
+						<GsdModule Id="12" In="6" Out="6" ModIdx="11" CfgData="95a5">
+							<Name>Module 12 (Achse-10 Flags und Daten)</Name>
+							<ImageId>24</ImageId>
+							<Vars VarGrpType="1">
+								<Name>Inputs</Name>
+								<Var>
+									<Name>Achse-10 Flags und Daten_0_0</Name>
+									<Type GUID="{18071995-0000-0000-0000-001300000006}">ARRAY [0..5] OF BYTE</Type>
+									<BitOffs>528</BitOffs>
+								</Var>
+							</Vars>
+							<Vars VarGrpType="2">
+								<Name>Outputs</Name>
+								<Var>
+									<Name>Achse-10 Flags und Daten_1_0</Name>
+									<Type GUID="{18071995-0000-0000-0000-001300000006}">ARRAY [0..5] OF BYTE</Type>
+									<BitOffs>528</BitOffs>
+								</Var>
+							</Vars>
+						</GsdModule>
+						<GsdModule Id="13" In="6" Out="6" ModIdx="12" CfgData="95a5">
+							<Name>Module 13 (Achse-11 Flags und Daten)</Name>
+							<ImageId>24</ImageId>
+							<Vars VarGrpType="1">
+								<Name>Inputs</Name>
+								<Var>
+									<Name>Achse-11 Flags und Daten_0_0</Name>
+									<Type GUID="{18071995-0000-0000-0000-001300000006}">ARRAY [0..5] OF BYTE</Type>
+									<BitOffs>576</BitOffs>
+								</Var>
+							</Vars>
+							<Vars VarGrpType="2">
+								<Name>Outputs</Name>
+								<Var>
+									<Name>Achse-11 Flags und Daten_1_0</Name>
+									<Type GUID="{18071995-0000-0000-0000-001300000006}">ARRAY [0..5] OF BYTE</Type>
+									<BitOffs>576</BitOffs>
+								</Var>
+							</Vars>
+						</GsdModule>
+						<GsdModule Id="14" In="6" Out="6" ModIdx="13" CfgData="95a5">
+							<Name>Module 14 (Achse-12 Flags und Daten)</Name>
+							<ImageId>24</ImageId>
+							<Vars VarGrpType="1">
+								<Name>Inputs</Name>
+								<Var>
+									<Name>Achse-12 Flags und Daten_0_0</Name>
+									<Type GUID="{18071995-0000-0000-0000-001300000006}">ARRAY [0..5] OF BYTE</Type>
+									<BitOffs>624</BitOffs>
+								</Var>
+							</Vars>
+							<Vars VarGrpType="2">
+								<Name>Outputs</Name>
+								<Var>
+									<Name>Achse-12 Flags und Daten_1_0</Name>
+									<Type GUID="{18071995-0000-0000-0000-001300000006}">ARRAY [0..5] OF BYTE</Type>
+									<BitOffs>624</BitOffs>
+								</Var>
+							</Vars>
+						</GsdModule>
+						<GsdModule Id="15" In="6" Out="6" ModIdx="14" CfgData="95a5">
+							<Name>Module 15 (Achse-13 Flags und Daten)</Name>
+							<ImageId>24</ImageId>
+							<Vars VarGrpType="1">
+								<Name>Inputs</Name>
+								<Var>
+									<Name>Achse-13 Flags und Daten_0_0</Name>
+									<Type GUID="{18071995-0000-0000-0000-001300000006}">ARRAY [0..5] OF BYTE</Type>
+									<BitOffs>672</BitOffs>
+								</Var>
+							</Vars>
+							<Vars VarGrpType="2">
+								<Name>Outputs</Name>
+								<Var>
+									<Name>Achse-13 Flags und Daten_1_0</Name>
+									<Type GUID="{18071995-0000-0000-0000-001300000006}">ARRAY [0..5] OF BYTE</Type>
+									<BitOffs>672</BitOffs>
+								</Var>
+							</Vars>
+						</GsdModule>
+					</Profibus>
+				</Box>
+				<Profibus>
+					<Fcxxxx>
+						<DevSettings PerformReset="true" NetId="8cb551a20201" EquiCycleTime="100000" NcAccessTime="15000"/>
+						<DevParameter CycleTime="100000"/>
+					</Fcxxxx>
+					<BusParameter Ttr="35577" MinSlaveInterval="100"/>
+				</Profibus>
+			</Device>
+		</Io>
+	</Project>
+	<Mappings>
+		<MappingInfo Identifier="{00000000-0010-0304-2000-040310000403}" Id="#x03070010"/>
+		<OwnerA Name="TIRT^Probus">
+			<OwnerB Name="TIID^Device 1 (FC31xx)^Box 1 (GSD Box) (PA-Control)">
+				<Link VarA="Inputs^Axis10_Position" VarB="Module 12 (Achse-10 Flags und Daten)^Inputs^Achse-10 Flags und Daten_0_0" Size="32" OffsB="16"/>
+				<Link VarA="Inputs^Axis10_Status" VarB="Module 12 (Achse-10 Flags und Daten)^Inputs^Achse-10 Flags und Daten_0_0"/>
+				<Link VarA="Inputs^Axis11_Position" VarB="Module 13 (Achse-11 Flags und Daten)^Inputs^Achse-11 Flags und Daten_0_0" Size="32" OffsB="16"/>
+				<Link VarA="Inputs^Axis11_Status" VarB="Module 13 (Achse-11 Flags und Daten)^Inputs^Achse-11 Flags und Daten_0_0"/>
+				<Link VarA="Inputs^Axis12_Position" VarB="Module 14 (Achse-12 Flags und Daten)^Inputs^Achse-12 Flags und Daten_0_0" Size="32" OffsB="16"/>
+				<Link VarA="Inputs^Axis12_Status" VarB="Module 14 (Achse-12 Flags und Daten)^Inputs^Achse-12 Flags und Daten_0_0"/>
+				<Link VarA="Inputs^Axis13_Position" VarB="Module 15 (Achse-13 Flags und Daten)^Inputs^Achse-13 Flags und Daten_0_0" Size="32" OffsB="16"/>
+				<Link VarA="Inputs^Axis13_Status" VarB="Module 15 (Achse-13 Flags und Daten)^Inputs^Achse-13 Flags und Daten_0_0"/>
+				<Link VarA="Inputs^Axis1_Position" VarB="Module 3 (Achse-1 Flags und Daten)^Inputs^Achse-1 Flags und Daten_0_0" Size="32" OffsB="16"/>
+				<Link VarA="Inputs^Axis1_Status" VarB="Module 3 (Achse-1 Flags und Daten)^Inputs^Achse-1 Flags und Daten_0_0"/>
+				<Link VarA="Inputs^Axis2_Position" VarB="Module 4 (Achse-2 Flags und Daten)^Inputs^Achse-2 Flags und Daten_0_0" Size="32" OffsB="16"/>
+				<Link VarA="Inputs^Axis2_Status" VarB="Module 4 (Achse-2 Flags und Daten)^Inputs^Achse-2 Flags und Daten_0_0"/>
+				<Link VarA="Inputs^Axis3_Position" VarB="Module 5 (Achse-3 Flags und Daten)^Inputs^Achse-3 Flags und Daten_0_0" Size="32" OffsB="16"/>
+				<Link VarA="Inputs^Axis3_Status" VarB="Module 5 (Achse-3 Flags und Daten)^Inputs^Achse-3 Flags und Daten_0_0"/>
+				<Link VarA="Inputs^Axis4_Position" VarB="Module 6 (Achse-4 Flags und Daten)^Inputs^Achse-4 Flags und Daten_0_0" Size="32" OffsB="16"/>
+				<Link VarA="Inputs^Axis4_Status" VarB="Module 6 (Achse-4 Flags und Daten)^Inputs^Achse-4 Flags und Daten_0_0"/>
+				<Link VarA="Inputs^Axis5_Position" VarB="Module 7 (Achse-5 Flags und Daten)^Inputs^Achse-5 Flags und Daten_0_0" Size="32" OffsB="16"/>
+				<Link VarA="Inputs^Axis5_Status" VarB="Module 7 (Achse-5 Flags und Daten)^Inputs^Achse-5 Flags und Daten_0_0"/>
+				<Link VarA="Inputs^Axis6_Position" VarB="Module 8 (Achse-6 Flags und Daten)^Inputs^Achse-6 Flags und Daten_0_0" Size="32" OffsB="16"/>
+				<Link VarA="Inputs^Axis6_Status" VarB="Module 8 (Achse-6 Flags und Daten)^Inputs^Achse-6 Flags und Daten_0_0"/>
+				<Link VarA="Inputs^Axis7_Position" VarB="Module 9 (Achse-7 Flags und Daten)^Inputs^Achse-7 Flags und Daten_0_0" Size="32" OffsB="16"/>
+				<Link VarA="Inputs^Axis7_Status" VarB="Module 9 (Achse-7 Flags und Daten)^Inputs^Achse-7 Flags und Daten_0_0"/>
+				<Link VarA="Inputs^Axis8_Position" VarB="Module 10 (Achse-8 Flags und Daten)^Inputs^Achse-8 Flags und Daten_0_0" Size="32" OffsB="16"/>
+				<Link VarA="Inputs^Axis8_Status" VarB="Module 10 (Achse-8 Flags und Daten)^Inputs^Achse-8 Flags und Daten_0_0"/>
+				<Link VarA="Inputs^Axis9_Position" VarB="Module 11 (Achse-9 Flags und Daten)^Inputs^Achse-9 Flags und Daten_0_0" Size="32" OffsB="16"/>
+				<Link VarA="Inputs^Axis9_Status" VarB="Module 11 (Achse-9 Flags und Daten)^Inputs^Achse-9 Flags und Daten_0_0"/>
+				<Link VarA="Inputs^In_Byte0" VarB="Module 2 (PAC-Daten mit Konsistenz)^Inputs^PAC-Daten mit Konsistenz_0_0"/>
+				<Link VarA="Inputs^In_Byte1" VarB="Module 2 (PAC-Daten mit Konsistenz)^Inputs^PAC-Daten mit Konsistenz_0_0" Size="8" OffsB="8"/>
+				<Link VarA="Inputs^In_Byte2" VarB="Module 2 (PAC-Daten mit Konsistenz)^Inputs^PAC-Daten mit Konsistenz_0_0" Size="8" OffsB="16"/>
+				<Link VarA="Inputs^In_Byte3" VarB="Module 2 (PAC-Daten mit Konsistenz)^Inputs^PAC-Daten mit Konsistenz_0_0" Size="8" OffsB="24"/>
+				<Link VarA="Inputs^In_Byte4" VarB="Module 2 (PAC-Daten mit Konsistenz)^Inputs^PAC-Daten mit Konsistenz_0_0" Size="8" OffsB="32"/>
+				<Link VarA="Inputs^In_Byte5" VarB="Module 2 (PAC-Daten mit Konsistenz)^Inputs^PAC-Daten mit Konsistenz_0_0" Size="8" OffsB="40"/>
+				<Link VarA="Inputs^In_Word0" VarB="Module 2 (PAC-Daten mit Konsistenz)^Inputs^PAC-Daten mit Konsistenz_0_0" Size="16" OffsB="48"/>
+				<Link VarA="Outputs^Out_Word0" VarB="Module 2 (PAC-Daten mit Konsistenz)^Outputs^PAC-Daten mit Konsistenz_1_0"/>
+				<Link VarA="Outputs^Out_Word1" VarB="Module 2 (PAC-Daten mit Konsistenz)^Outputs^PAC-Daten mit Konsistenz_1_0" Size="32" OffsB="32"/>
+			</OwnerB>
+		</OwnerA>
+	</Mappings>
+</TcSmProject>
