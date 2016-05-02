@@ -1,4 +1,4 @@
 Some remarks for the IEFWerner:
 -------------------------------
 - Do not try to connect directly to the I/O variables from the OPC server. Instead duplicate them and link the new ones to the old ones.
-- In the DSM, lower the OPC update rate from 1s to about 100ms (and also lower the reconnect poll rate if you want)
+- In the DSM, lower the OPC update rate from 1s to about 10ms (and also lower the reconnect poll rate if you want, tried now 1s)
